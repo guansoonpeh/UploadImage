@@ -19,8 +19,8 @@
 
     <ImageView
         android:id="@+id/imgProfile"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -33,7 +33,19 @@
         android:layout_height="wrap_content"
         android:text="Upload"
         app:layout_constraintBottom_toBottomOf="@+id/btnBrowse"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnGet"
         app:layout_constraintStart_toEndOf="@+id/btnBrowse"
-        app:layout_constraintTop_toTopOf="@+id/btnBrowse" />
+        app:layout_constraintTop_toTopOf="@+id/btnBrowse"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btnGet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:text="Get"
+        app:layout_constraintBottom_toBottomOf="@+id/btnUpload"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnUpload"
+        app:layout_constraintTop_toTopOf="@+id/btnUpload" />
 </androidx.constraintlayout.widget.ConstraintLayout>
